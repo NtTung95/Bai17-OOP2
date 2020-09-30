@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Phát triển ứng dụng nhỏ mô phỏng câu chuyện Adam và Eva</title>
+
+</head>
+<body>
+<script src="js/antao.js"></script>
+<script>
+    let apple = new Apple(10);
+    let adam = new Human('adam', 'nam', 50)
+    let eva = new Human('eva', 'nu', 40)
+
+    setInterval(eat, 1000)
+
+    function eat() {
+        adam.eat(apple);
+        eva.eat(apple);
+        adam.getMaxWeight();
+        eva.getMaxWeight();
+        console.log(adam.getWeight(),eva.getWeight());
+    }
+
+</script>
+</body>
+</html>
